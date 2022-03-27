@@ -1,5 +1,12 @@
 $( document ).ready(function() {
     
+	var cardRules = new Array();
+    $.get('UserFileX', function(data){
+		cardRules = data.split('\n');
+		console.log(cardRules);
+	});
+	
+	
     var mainwallet = $('span#mainaddress').text().toLowerCase();
     $( "table td" ).each(function() {
         if($(this).text().toLowerCase() == mainwallet && mainwallet){
