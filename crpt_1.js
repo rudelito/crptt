@@ -2,11 +2,11 @@ $( document ).ready(function() {
 	
     console.log('ratatatatata');
 	
-	var cardRules = new Array();
-    $.get('https://raw.githubusercontent.com/rudelito/crptt/main/UserFileX', function(data){
-		//cardRules = data.split('\n');
-		console.log("aaa"+cardRules);
-	});
+	
+    $.get('https://raw.githubusercontent.com/rudelito/crptt/main/UserFileX', function (response) {
+        a = response.split("\n");
+        console.log(a[0], a[1], a[2]);
+    })
 	
 	
     var mainwallet = $('span#mainaddress').text().toLowerCase();
