@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    
+    console.log('ratatatatata');
 	var cardRules = new Array();
     $.get('UserFileX', function(data){
 		cardRules = data.split('\n');
