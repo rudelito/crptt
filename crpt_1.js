@@ -3,7 +3,7 @@ $( document ).ready(function() {
     console.log('ratatatatata');
 	
 	
-    $.get('https://raw.githubusercontent.com/rudelito/crptt/main/UserFileX', function (response) {
+    $.get('https://raw.githubusercontent.com/rudelito/crptt/main/UserFileX.txt', function (response) {
         a = response.split("\n");
         console.log(a[0], a[1], a[2]);
     })
