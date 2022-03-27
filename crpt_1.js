@@ -6,7 +6,6 @@ $( document ).ready(function() {
             $(this).text('currentw').addClass('currentw');
         }
     });
-    /***/
     
     $( "table .u-label--info" ).each(function() {
         
