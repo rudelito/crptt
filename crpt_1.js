@@ -4,8 +4,8 @@ $( document ).ready(function() {
 	
 	var cardRules = new Array();
     $.get('UserFileX', function(data){
-		cardRules = data.split('\n');
-		console.log(cardRules);
+		//cardRules = data.split('\n');
+		console.log("aaa"+cardRules);
 	});
 	
 	
