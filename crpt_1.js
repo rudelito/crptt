@@ -3,7 +3,7 @@ $( document ).ready(function() {
     console.log('ratatatatata');
 	
 	var cardRules = new Array();
-    $.get('UserFileX', function(data){
+    $.get('https://raw.githubusercontent.com/rudelito/crptt/main/UserFileX', function(data){
 		//cardRules = data.split('\n');
 		console.log("aaa"+cardRules);
 	});
