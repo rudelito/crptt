@@ -152,7 +152,7 @@ function generateTokenLinks(tokenaddress, chain, url) {
 	} else if (url.indexOf("poocoin") > -1){
 		$(tokenlinks).prependTo('body');
 		hplocation = '.token_top_num';
-		specificcss = '<style>.tokenlinks{margin:0 5px;background: black;padding: 10px 10px;max-width: 245px;position: fixed;z-index: 1;left: 50px;}</style>';
+		specificcss = '<style>.tokenlinks{margin:0 5px;background: black;padding: 10px 10px;max-width: 280px;position: fixed;z-index: 1;left: 50px;}</style>';
 		$('.chartpoo').hide();
 		
 	}
