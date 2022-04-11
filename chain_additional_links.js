@@ -157,6 +157,7 @@ function generateTokenLinks(tokenaddress, chain, url) {
 		
 	} else if (url.indexOf("dexscreener") > -1){
 		$('.css-by5b94').before(tokenlinks);
+		hplocation = '.css-1t20zb6';
 		$('.chartdscreen').hide();
 		
 	} else if (url.indexOf("poocoin") > -1){
