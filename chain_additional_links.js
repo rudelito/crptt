@@ -193,7 +193,7 @@ function generateTokenLinks(tokenaddress, chain, url) {
           $( "<div/>", {
             "class": "honeypotcheck",
             html: items.join( "" )
-          }).appendTo( ".graph-header" );
+          }).appendTo( hplocation );
         });
 	}
 
