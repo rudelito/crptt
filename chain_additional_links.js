@@ -28,38 +28,39 @@ function searchforCA() {
 	var tokenaddress = '';
 	
 	//wait for tokenaddress to appear and trigger links
-    var checkExistCA = setInterval(function() {
-		
-		if  (url.indexOf("dextools") > -1){
-			if ($('.social-icons a[href*="/token/"], iframe[id*="tradingview"]').length) {
-				tokenaddress = $('.social-icons a[href*="/token/"]').attr('href');
-				tokenaddress = tokenaddress.substring(tokenaddress.lastIndexOf("/") + 1);
-				
-				generateTokenLinks(tokenaddress, chain, url);
-				
-				clearInterval(checkExistCA);
+    if(!$('.tokenlinks').length){
+		var checkExistCA = setInterval(function() {
+			
+			if  (url.indexOf("dextools") > -1){
+				if ($('.social-icons a[href*="/token/"], iframe[id*="tradingview"]').length) {
+					tokenaddress = $('.social-icons a[href*="/token/"]').attr('href');
+					tokenaddress = tokenaddress.substring(tokenaddress.lastIndexOf("/") + 1);
+					
+					generateTokenLinks(tokenaddress, chain, url);
+					
+					clearInterval(checkExistCA);
+				}
+			} else if (url.indexOf("dexscreener") > -1){
+				if ($('a.chakra-link.chakra-button[href*="/token/"]').length) {
+					tokenaddress = $('a.chakra-link.chakra-button[href*="/token/"]').attr('href');
+					tokenaddress = tokenaddress.substring(tokenaddress.lastIndexOf("/") + 1);
+					
+					generateTokenLinks(tokenaddress, chain, url);
+					
+					clearInterval(checkExistCA);
+				}
+			} else if (url.indexOf("poocoin") > -1){
+				if ($('.unpad-2').length) {
+					tokenaddress = url.substring(url.lastIndexOf('/') + 1);
+					
+					generateTokenLinks(tokenaddress, chain, url);
+					
+					clearInterval(checkExistCA);
+				}
 			}
-		} else if (url.indexOf("dexscreener") > -1){
-			if ($('a.chakra-link.chakra-button[href*="/token/"]').length) {
-				tokenaddress = $('a.chakra-link.chakra-button[href*="/token/"]').attr('href');
-				tokenaddress = tokenaddress.substring(tokenaddress.lastIndexOf("/") + 1);
-				
-				generateTokenLinks(tokenaddress, chain, url);
-				
-				clearInterval(checkExistCA);
-			}
-		} else if (url.indexOf("poocoin") > -1){
-			if ($('.unpad-2').length) {
-				tokenaddress = url.substring(url.lastIndexOf('/') + 1);
-				
-				generateTokenLinks(tokenaddress, chain, url);
-				
-				clearInterval(checkExistCA);
-			}
-		}
-		
 
-    }, 1000);
+		}, 1000);
+	}
 }
 
 
