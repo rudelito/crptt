@@ -2,9 +2,19 @@ $( document ).ready(function() {
     searchforCA();
 });
 
-$(window).on('hashchange', function(e){
-    searchforCA();
-});
+let lastUrl = location.href; 
+new MutationObserver(() => {
+  const url = location.href;
+  if (url !== lastUrl) {
+    lastUrl = url;
+    onUrlChange();
+  }
+}).observe(document, {subtree: true, childList: true});
+ 
+ 
+function onUrlChange() {
+  searchforCA();
+}
 
 function searchforCA() {
 	var chain;
