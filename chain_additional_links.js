@@ -124,11 +124,11 @@ function generateTokenLinks(tokenaddress, chain, url) {
 	var linkdetecthp = '<a class="btn-base testdethp tokenhoney" href="https://detecthoneypot.com/scan?chain='+bog_def_dethp_chain+'&address='+tokenaddress+'" target="_blank"><img src="https://img.icons8.com/offices/344/honey.png"></a>'
 	
 	//scan links
-	var linkcatransac = '<a class="btn-base btn-noimg" target="_blank" href="'+scan_chain+'/address/'+tokenaddress+'">$</a>';
-	var linkcacode = '<a class="btn-base btn-noimg" target="_blank" href="'+scan_chain+'/address/'+tokenaddress+'#code">📄</a>';
+	var linkcatransac = '<a class="btn-base btn-noimg" target="_blank" href="https://'+scan_chain+'/address/'+tokenaddress+'">$</a>';
+	var linkcacode = '<a class="btn-base btn-noimg" target="_blank" href="https://'+scan_chain+'/address/'+tokenaddress+'#code">📄</a>';
 	
-	var linkcatransfer = '<a class="btn-base btn-noimg" target="_blank" href="'+scan_chain+'/token/'+tokenaddress+'">↔</a>';
-	var linkcaholders = '<a class="btn-base btn-noimg" target="_blank" href="'+scan_chain+'/token/'+tokenaddress+'#balances">👥</a>';
+	var linkcatransfer = '<a class="btn-base btn-noimg" target="_blank" href="https://'+scan_chain+'/token/'+tokenaddress+'">↔</a>';
+	var linkcaholders = '<a class="btn-base btn-noimg" target="_blank" href="https://'+scan_chain+'/token/'+tokenaddress+'#balances">👥</a>';
 	
 	//group links
 	var charts_links = linkpoo+linkdscreen+linkdext+linkdefined;
