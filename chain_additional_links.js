@@ -115,7 +115,7 @@ function generateTokenLinks(tokenaddress, chain, url) {
 	var linkdext = '<a class="btn-base chartdext tokenteal" href="https://www.dextools.io/app/'+dext_chain+'/pair-explorer/'+tokenaddress+'" target="_blank"><img src="https://www.dextools.io/app/assets/img/logo/dext-white-small.png"></a>';
 	var linkdscreen = '<a class="btn-base chartdscreen tokenblack" href="https://dexscreener.com/'+dscreen_chain+'/'+tokenaddress+'" target="_blank"><img src="https://dexscreener.com/img/apple-touch-icon.png"></a>';
 	var linkdefined = '<a class="btn-base chartdef tokenpurp" href="https://www.defined.fi/'+bog_def_dethp_chain+'/'+tokenaddress+'" target="_blank"><img src="https://assets.coingecko.com/coins/images/13626/small/BicSg26r_400x400.png?1610418623"></a>';
-	var linkcoinscan = '<a class="btn-base chartcscan tokenyellow" href="https://www.coinscan.com/token/'+tokenaddress+'" target="_blank"><img src="https://pbs.twimg.com/profile_images/1499644821492822017/hURTTHMk_400x400.jpg"></a>';
+	var linkcoinscan = '<a class="btn-base chartcscan tokenyellow" href="https://www.coinscan.com/token/'+tokenaddress+'" target="_blank"><img src="https://pbs.twimg.com/profile_images/1499644821492822017/hURTTHMk_400x400.jpg?v=1"></a>';
 	
 	
 	
