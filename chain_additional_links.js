@@ -115,6 +115,9 @@ function generateTokenLinks(tokenaddress, chain, url) {
 	var linkdext = '<a class="btn-base chartdext tokenteal" href="https://www.dextools.io/app/'+dext_chain+'/pair-explorer/'+tokenaddress+'" target="_blank"><img src="https://www.dextools.io/app/assets/img/logo/dext-white-small.png"></a>';
 	var linkdscreen = '<a class="btn-base chartdscreen tokenblack" href="https://dexscreener.com/'+dscreen_chain+'/'+tokenaddress+'" target="_blank"><img src="https://dexscreener.com/img/apple-touch-icon.png"></a>';
 	var linkdefined = '<a class="btn-base chartdef tokenpurp" href="https://www.defined.fi/'+bog_def_dethp_chain+'/'+tokenaddress+'" target="_blank"><img src="https://assets.coingecko.com/coins/images/13626/small/BicSg26r_400x400.png?1610418623"></a>';
+	var linkcoinscan = = '<a class="btn-base chartcscan tokenyellow" href="https://www.coinscan.com/token/'+tokenaddress+'" target="_blank"><img src="https://pbs.twimg.com/profile_images/1499644821492822017/hURTTHMk_400x400.jpg"></a>';
+	
+	
 	
 	//tester links
 	var linkhoney = '<a class="btn-base testhp tokenhoney" href="https://honeypot.is/'+honey_chain+'?address='+tokenaddress+'" target="_blank"><img src="https://img.icons8.com/offices/344/honey.png"></a>';
@@ -131,7 +134,7 @@ function generateTokenLinks(tokenaddress, chain, url) {
 	var linkcaholders = '<a class="btn-base btn-noimg" target="_blank" href="https://'+scan_chain+'/token/'+tokenaddress+'#balances">👥</a>';
 	
 	//group links
-	var charts_links = linkpoo+linkdscreen+linkdext+linkdefined;
+	var charts_links = linkpoo+linkdscreen+linkdext+linkdefined+linkcoinscan;
 	var swap_links = '';
 	var scan_links = linkcatransac+linkcacode+linkcaholders+linkcatransfer;
 	var tester_links = linkmoonarch+linkmm+linksniffer+linkhoney+linkdetecthp;
