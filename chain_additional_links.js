@@ -149,7 +149,7 @@ function generateTokenLinks(tokenaddress, chain, url) {
 		swap_links = linkbog+linktraderjoe;
 	}
 	
-	var tokenlinks = '<div class="tokenlinks"><div style="margin-bottom: 5px;"><div>'+ swap_links + '</div><span class="lgap"></span><div>' + charts_links + '</div></div><div><div>' + tester_links + '</div><span class="lgap"></span><div>'+ scan_links +'</div></div></div>'
+	var tokenlinks = '<div class="tokenlinks"><div>CA: '+tokenaddress+'</div><div style="margin-bottom: 5px;"><div>'+ swap_links + '</div><span class="lgap"></span><div>' + charts_links + '</div></div><div><div>' + tester_links + '</div><span class="lgap"></span><div>'+ scan_links +'</div></div></div>'
 
 	var hplocation = "";
 	var specificcss='<style>.tokenlinks{margin:0 5px;background: black;padding: 10px 10px;}</style>';
